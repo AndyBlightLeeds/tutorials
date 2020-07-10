@@ -11,7 +11,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 # declare the message files to generate code for
- set(msg_files
+set(msg_files
   "msg/Contact.msg"
   "msg/NewInROS2.msg"
 )
@@ -27,4 +27,5 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 )
 
 ament_export_dependencies(rosidl_default_runtime)
+
 ament_package()
